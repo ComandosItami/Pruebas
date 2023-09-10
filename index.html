@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejemplo de Botón para Abrir PHP</title>
 </head>
 <body>
-    <h1><a href="MeCabe.php">Hola loca</a></h1>
+    <button id="abrir-php">Abrir PHP</button>
+
+    <script>
+        // Obtén una referencia al botón
+        const botonAbrirPHP = document.getElementById('abrir-php');
+
+        // Agrega un manejador de eventos para el clic en el botón
+        botonAbrirPHP.addEventListener('click', function() {
+            // Redirige al usuario al archivo PHP
+            window.location.href = '../Pruebas/MeCabe.php';
+        });
+    </script>
 </body>
 </html>
